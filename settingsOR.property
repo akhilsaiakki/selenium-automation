@@ -1,0 +1,113 @@
+browser=chrome
+url=http://expedia.com
+implicit.wait=20
+#excelpath=
+#username=
+#password=
+sheetName=Sheet1
+
+#moduleName_ObjectName
+
+
+
+StaysButton = //span[text()='Stays']/..
+FlightsButton = //span[text()='Flights']/..
+RoundtripButton = //span[text()='Roundtrip']/..
+OnewayButton = //span[text()='One-way']/..
+MulltiCityButton = //span[text()='Multi-city']/..
+
+SignInLinkMain  = //div[contains(text(),'Sign in')]
+signInInnerButton = //a[contains(text(),'Sign in')]
+createAccountInner = //a[contains(text(),'free account')]
+
+
+travelersButton = //button[contains(@data-testid,'travelers')]
+travelersLink = //a[contains(@data-testid,'travelers')]
+
+adultDecrease = //label[text()='Adults']/..//button[1]
+adultCounter = //label[text()='Adults']/..//input ---> use getAttribute("value") # to get current selected count
+adultIncrease = //label[text()='Adults']/..//button[2]
+
+childrenDecrease = //label[text()='Children']/..//button[1]
+childCounter = //label[text()='Children']/..//input ---> use getAttribute("value") # to get current selected count
+childrenIncrease = //label[text()='Children']/..//button[2]
+
+childrenDecrease = //label[text()='Infants']/..//button[1]
+childCounter = //label[text()='Infants']/..//input ---> use getAttribute("value") # to get current selected count
+childrenIncrease = //label[text()='Infants']/..//button[2]
+
+
+DoneButton = //button[text()='Done']
+
+
+economyLink = //a[contains(@aria-label,'Economy')]
+economyOptionslist = //*[@id='preferred-class-input']//div/a # Returns a List --> use getText() to see value
+
+
+
+addFlightsTick = //*[@id='add-flight-switch']
+
+
+
+Depart == Checkin   Return == checkout
+
+
+originList1 = //li[contains(@data-stid,'origin-result-')]/button
+destinationList1 = //li[contains(@data-stid,'destination-result-')]/button
+
+
+goingTo1 = (//button[contains(@aria-label,'Going to')])[1]
+goingTo2 = (//button[contains(@aria-label,'Going to')])[2]
+leavingFrom1 = (//button[contains(@aria-label,'from')])[1]
+leavingFrom2 = (//button[contains(@aria-label,'from')])[2]
+
+
+LeavingFromTypeField1 = (//*[contains(@placeholder,'Where are you leaving from')])[1]
+LeavingFromTypeField2 = (//*[contains(@placeholder,'Where are you leaving from')])[2]
+
+goingToTypeField1 = (//input[contains(@placeholder,'Where are you going')])[1]
+goingToTypeField2 = (//input[contains(@placeholder,'Where are you going')])[2]
+
+
+AddAnotherFlightButton = //button[text()='Add another flight']
+removeFlight = //button[text()='Remove']
+
+
+departDate1Button = (//*[@data-name='d1'])[1]
+departDate2Button = (//*[@data-name='d1'])[2]
+returnDateButton = (//*[@data-name='d2'])[1]
+
+
+searchButton = //button[text()='Search']
+
+
+
+
+
+
+adultTravelerNumber=1
+childTravelerNumber=1
+infantTravelerNumber=1
+
+economyOption = 3
+
+
+fromLocation1 = Hyderabad
+fromOption1number = 3
+
+fromLocation2 = Bangalore
+fromOption2number = 4
+
+toLocation1 = Delhi
+toOption1number = 2
+
+toLocation2 = Pune
+tomOption2number = 3
+
+
+
+
+
+
+
+
